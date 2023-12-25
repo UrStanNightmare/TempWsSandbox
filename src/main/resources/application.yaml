@@ -1,0 +1,9 @@
+# Https
+server:
+  ssl:
+    key-store: file:afinny.p12
+    key-store-password: password
+    key-store-type: pkcs12
+    key-alias: afinny
+    key-password: password
+    enabled: false

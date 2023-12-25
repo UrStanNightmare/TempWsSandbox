@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="Console"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>
+                %black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%logger{40}) - %msg%n%throwable
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+
+    <root level="info">
+        <appender-ref ref="Console"/>
+    </root>
+
+    <logger name="ru.urstannightmare.wsshit" level="info" additivity="false">
+        <appender-ref ref="Console"/>
+    </logger>
+
+</configuration>
