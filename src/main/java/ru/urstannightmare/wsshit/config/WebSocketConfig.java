@@ -42,7 +42,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         registry
                 .addEndpoint("/ws")
 //                .setAllowedOriginPatterns("/**")
-                .setAllowedOrigins("http://localhost:3000")
+                .setAllowedOrigins("http://localhost:3000","https://websocketking.com/")
                 .withSockJS();
     }
 
@@ -56,6 +56,5 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         messageConverters.add(converter);
         return false;
     }
-
 
 }
