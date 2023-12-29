@@ -1,7 +1,5 @@
 package ru.urstannightmare.wsshit.service;
 
-import ru.urstannightmare.wsshit.model.ChatRoom;
-
 import java.util.Optional;
 
 public class ChatRoomService {

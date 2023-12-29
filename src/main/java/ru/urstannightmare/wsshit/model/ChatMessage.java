@@ -5,9 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.data.annotation.Id;
-
-import java.util.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,7 +12,6 @@ import java.util.Date;
 @Setter
 @ToString
 public class ChatMessage {
-    @Id
     private String id;
     private String chatId;
     private String senderId;
